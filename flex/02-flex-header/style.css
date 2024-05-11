@@ -1,6 +1,8 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  padding: 5px;
+ 
 }
 
 .logo {
@@ -22,4 +24,43 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+
+.header, .logo {
+  display: flex;
+  justify-content: space-between;      /*No need to make the logo a flex container.*/
+}               
+
+.logo{
+  align-items:center;
+  justify-content: center;  /* To make it so that the logo is centered within the header, you would need to use align-content on the header container because the logo is its flex item.*/
+
+
+div ul{
+  display: flex;
+  padding: 0px;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+  margin: 0px;
+  
+ 
+}
+
+
+
+
+.header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
