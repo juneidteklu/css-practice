@@ -4,7 +4,11 @@
 }
 
 .container {
+  height: 100vh;
   text-align: center;
+  display: grid;
+  grid-template-rows: 2fr 1fr 7fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 .container div {
@@ -17,6 +21,7 @@
 
 .header {
   background-color: #393f4d;
+  grid-column: 1/4;
 }
 
 .menu ul,
@@ -26,6 +31,7 @@
 
 .sidebar {
   background-color: #FF7755;
+  grid-row: 2/4;
 }
 
 .sidebar .photo {
@@ -46,6 +52,7 @@
 
 .nav {
   background-color: #FF7755;
+  grid-column: 2/4;
 }
 
 .nav ul li {
@@ -55,6 +62,7 @@
 
 .article {
   background-color: #bccbde;
+  grid-column: 2/4;
 }
 
 .article p {
@@ -83,6 +91,7 @@
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1/4;
 }
 
 .footer p {
