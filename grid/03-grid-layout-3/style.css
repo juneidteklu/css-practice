@@ -32,12 +32,10 @@
 .header {
   background-color: #393f4d;
   grid-column: 1/4;
+  grid-template-columns: 1fr 3fr;
 }
 .header, .container ul{
   display: grid;
-}
-.header{
-  grid-template-columns: 1fr 3fr;
 }
 .header ul{
   grid-template-columns: repeat(4, 1fr);
